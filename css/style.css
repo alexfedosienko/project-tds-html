@@ -1168,6 +1168,7 @@ input:checked + .switch-slider:before {
 .main-houses__img {
     width: 300px;
     height: 190px;
+    filter: brightness(0.85);
 }
 .main-houses__house:hover .main-houses__img_block::after{
   content: '';
@@ -2090,6 +2091,9 @@ input:checked + .switch-slider:before {
     margin-top: 30px;
 }
 
+.flats-table th {
+  font-weight: normal;
+}
 .flats-body__row,
 .flats-header__row,
 .flats-body__row td,
@@ -2118,6 +2122,17 @@ td, th{
 }
 .flats-column__field-for-mobile{
   display: none;
+}
+
+.flats-pagination a {
+  width: 34px;
+  padding: 5px 10px;
+  text-align: center;
+  margin-right: 10px;
+}
+.flats-pagination{
+  justify-content: center;
+  display: flex;
 }
 @media (max-width: 767px) {
   .select-flats__breadcrumbs {
