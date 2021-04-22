@@ -1168,7 +1168,7 @@ input:checked + .switch-slider:before {
 .completed__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 200px;
 }
 
@@ -1221,7 +1221,7 @@ input:checked + .switch-slider:before {
     height: 190px;
 }
 .main-houses__img {
-    width: 300px;
+    width: 100%;
     height: 190px;
     filter: brightness(0.85);
 }
@@ -1237,20 +1237,6 @@ input:checked + .switch-slider:before {
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1;
-}
-
-.main-houses__info-secondary{
-  color: #99A1AA;
-  font-size: 10px;
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-.main-houses__info-main{
-  color: var(--golden);
-  font-size: 14px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .house-background__pen{
@@ -1431,15 +1417,6 @@ input:checked + .switch-slider:before {
   .main-houses__img{
     width: 100%;
     height: 150px;
-  }
-  .main-houses__info-secondary{
-    margin-top: 20px;
-  }
-  .info-secondary{
-    font-size: 12px;
-  }
-  .main-houses__info-main{
-    font-size: 16px;
   }
 
   .main-payments{
@@ -2277,8 +2254,17 @@ td, th{
 .projects__item{
   margin-bottom: 20px;
 }
-.projects__item-big{
+.projects__item:nth-child(7n-1),
+.projects__item:nth-child(7n){
   width: 49%;
+}
+
+.main-houses__info{
+  display: grid;
+  text-align: center;
+}
+.info-house__address{
+  color: var(--muted);
 }
 
 .projects-btn {
