@@ -64,7 +64,7 @@ $( document ).ready(function() {
     });
   }
 
-  if ($(window).width() <= '767'){
+  if ($(window).width() <= '767' && $('*').is('.house-info__images')){
     $('.house-info__images').slick({
       slidesToShow: 1,
       infinite: false,
@@ -130,23 +130,29 @@ $( document ).ready(function() {
         $(this).hasClass('about-tabs__requisites') && $requisites.show()
       })
     }
-  //              about!                   //
 
+    if ($(window).width() <= '767' && $('*').is('.about-tabs')) {
+      $('.about-tabs').slick({
+        slidesToShow: 1,
+        infinite: false,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        variableWidth: true,
+      })
+    }
 
-
-  //              slider!                   //
-
-  let spinner = document.querySelector(".loading");
-  let body_contact = document.querySelector(".contacts-body");
-
-  if(spinner && body_contact){
-    window.addEventListener('load', function(){
-      spinner.style.opacity = 0;
-      body_contact.style.opacity = 1;
-    });
+  // -------------------------- about-accordion ---------------------------//
+  if ($('*').is('.docs__accordion-head')) {
+    $('.docs__accordion-head').bind('click', function(){
+      const thisEl = $(this).next()[0].children[0]
+      const paddings = 60
+      if (thisEl.style.height != '0px' && thisEl.style.height !== "") thisEl.style.height = '0px';
+      else thisEl.style.height = thisEl.scrollHeight + paddings  + "px";
+    })
   }
-
-  //              slider!                   //
+  // -------------------------- about-accordion! ---------------------------//
+  // -------------------------- about! -------------------------- //
 
   // -------------------------- filter ---------------------------//
 
@@ -166,15 +172,7 @@ $( document ).ready(function() {
     }
   })
 
-  // -------------------------- filter ---------------------------//
-
-  if ($('*').is('.docs__accordion-head')) {
-    $('.docs__accordion-head').bind('click', function(){
-      const thisEl = $(this).next()[0]
-      if (thisEl.style.maxHeight) thisEl.style.maxHeight = null;
-      else thisEl.style.maxHeight = thisEl.scrollHeight + "px";
-    })
-  }
+  // -------------------------- filter! ---------------------------//
 
   if($('*').is('#price')){
     $("#price").ionRangeSlider({

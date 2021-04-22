@@ -161,6 +161,16 @@ ul{
   color: var(--golden);
   text-decoration: none;
 }
+
+@media (max-width: 767px) {
+  .header__logo-image {
+    top: 5px;
+    height: 50px;
+  }
+  .header__burger {
+    top: 23px;
+  }
+}
 /* ----------- header! ----------- */
 
 /* ----------- footer ----------- */
@@ -2482,13 +2492,26 @@ td, th{
   border: 1px solid var(--golden);
   text-align: left;
   outline: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .docs__accordion-body {
   text-align: left;
   background-color: var(--dark);
   color: var(--golden);
-  padding: 30px 65px 25px 65px;
   border: 1px solid rgba(255, 233, 189, 0.5);
+  padding: 0;
+  overflow: hidden;
+}
+.docs__accordion-content{
+  height: 0px;
+  transition: 1s;
+
+  position: relative;
+  top: 30px;
+  left: 65px;
 }
 .docs__docs-title {
   display: block;
@@ -2566,6 +2589,15 @@ td, th{
   display: block;
   text-align: center;
   margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .about-tabs{
+    display: inline-block;
+  }
+  .slick-track{
+    display: flex;
+  }
 }
 /* ----------------------------- about! ----------------------------- */
 
