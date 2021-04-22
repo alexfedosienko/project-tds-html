@@ -1950,7 +1950,7 @@ input:checked + .switch-slider:before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
   }
   .favorite-item__payment-button {
     width: 200px;
@@ -2147,6 +2147,10 @@ input:checked + .switch-slider:before {
 .contacts-body__img-block{
   border: 3px solid var(--golden);
 }
+.contacts-body__img-block iframe {
+  width: 90%;
+}
+
 .contacts-body{
   display:flex;
   flex-wrap: wrap;
