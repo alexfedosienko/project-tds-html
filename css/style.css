@@ -481,6 +481,11 @@ input:checked + .switch-slider:before {
 .switch-slider.round:before {
   border-radius: 50%;
 }
+@media (max-width: 1023px) {
+  #filter{
+    max-height: none;
+  }
+}
 /* ----------- filter! ----------- */
 
 /* ----------- breadcrumbs ----------- */
