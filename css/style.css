@@ -1019,7 +1019,7 @@ input:checked + .switch-slider:before {
 .house-info__subtitle {
   font-size: 12px;
   margin-right: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 .house-info__item {
   margin: 10px 0;
