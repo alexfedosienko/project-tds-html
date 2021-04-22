@@ -1932,6 +1932,7 @@ input:checked + .switch-slider:before {
 .one-news__muted {
   display: flex;
   justify-content: space-between;
+  margin: 50px 0;
 }
 
 /* ----------------------------- one-news! ----------------------------- */
