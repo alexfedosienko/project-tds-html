@@ -1801,11 +1801,8 @@ input:checked + .switch-slider:before {
     width: 100%;
   }
 
-  .flat-similar__block_mobile{
-    display: grid !important;
-  }
-  .flat-similar__block_mobile .slick-dots {
-    width: 100vw;
+  .flat-similar__block{
+    display: block;
   }
   .flat-similar__item{
     margin-right: 40px;

@@ -74,8 +74,8 @@ $( document ).ready(function() {
       variableWidth: true,
     })
   }
-  if ($('*').is('.flat-similar__block_mobile')) {
-    $('.flat-similar__block_mobile').slick({
+  if ($(window).width() <= '767' && $('*').is('.flat-similar__block')) {
+    $('.flat-similar__block').slick({
       slidesToShow: 1,
       infinite: false,
       slidesToScroll: 1,
