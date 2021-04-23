@@ -103,9 +103,38 @@ main{
   display: flex;
   justify-content: space-between;
 }
-
 ul{
   list-style-type: none;
+}
+.modal{
+  max-width: 700px;
+  height: 700px;
+  padding: 0px;
+  border-radius: 0px;
+  background-color: rgba(0,0,0, 0);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+}
+.close-modal {
+  top: 0px !important;
+  right: 0px !important;
+  background-image: url('./icons/Exclude.svg') !important;
+}
+
+.callback{
+  position: relative;
+  top: 40px;
+  height: 600px;
+}
+.callback-inputs{
+  width: 600px;
+  margin-bottom: 90px;
+}
+.callback-inputs__item{
+  width: 240px;
 }
 /* ----------- docs-link ----------- */
 
@@ -2720,7 +2749,7 @@ td, th{
 .purchase-combination__row{
   display: grid;
   grid-template-columns: minmax(558px, 1fr) 1fr;
-  gap: 150px;
+  gap: 75px;
 }
 
 .purchase-combination__img-block img{
@@ -2766,7 +2795,10 @@ td, th{
 }
 .purchase-ipoteka__items-block {
   margin: 60px auto 160px auto;
-  width: 920px;
+  max-width: 920px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .purchase-ipoteka__item {
   border: 1px solid var(--golden);
@@ -2890,7 +2922,7 @@ td, th{
 }
 
 .trade-in__subtitle{
-  width: 36%;
+  max-width: 400px;
   display: flex;
   text-align: center;
   margin: 0 auto;
@@ -2926,17 +2958,19 @@ td, th{
 .trade-in__steps_up{
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-top: 90px;
 }
 .trade-in__steps_down{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top:80px;
 }
 
 .trade-in__footer{
   display: flex;
-  width: 50%;
+  max-width: 555px;
   margin: 80px auto 150px auto;
   text-align: center;
 }
@@ -2952,7 +2986,6 @@ td, th{
 .trade-in__select-title{
   margin-top: 25px;
   margin-bottom: 40px;
-  font-size: 36px;
 }
 .trade-in__select-button{
   display: flex;
@@ -2993,8 +3026,37 @@ td, th{
 
 @media (max-width: 992px) {
   .purchase-payment__row{
-  width: 80% !important;
+    width: 80% !important;
+  }
+  .purchase-ipoteka__items-block {
+    justify-content: space-around;
+  }
+  .purchase-ipoteka__item {
+    margin-bottom: 50px;
+  }
+  .purchase-registration__img {
+    display: none;
+  }
+  .purchase-combination__row {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+  }
+  .purchase-combination__img-block img{
+    width: 80%;
+    height: 205px;
+  }
 }
+@media (max-width: 550px) {
+  .trade-in__steps,
+  .trade-in__steps_up,
+  .trade-in__steps_down {
+    display: block;
+    margin: 0 auto;
+  }
+  .trade-in__step{
+    margin: 30px auto;
+  }
 }
 
 /* ----------------------------- purchase! ----------------------------- */

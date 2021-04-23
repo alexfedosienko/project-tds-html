@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link type="image/x-icon" rel="shortcut icon" href="icons/favicon.svg">
 
     <link rel="stylesheet" href="css/style.css">
@@ -58,8 +59,8 @@
     <main class="main-container purchase">
       <section class="purchase-header">
         <div class="purchase-slider__slide purchase-slider__slide_first">
-          <h2 class="purchase-slider__title title">Первый взнос <br>по ипотеке от 10%</h1>
-          <a href="https://tver.domclick.ru/complexes/zhk-penaty__114417?utm_referrer=https%3A%2F%2Fwww.google.com%2F" class="purchase-slider__button select-btn">Подробнее</a>
+          <h2 class="purchase-slider__title title">Покупка через<br>ЭСКРОУ СЧЕТ</h1>
+          <a href="#ex1" class="purchase-slider__button select-btn" rel="modal:open">Подробнее</a>
         </div>
       </section>
 
@@ -70,21 +71,21 @@
 
           <div class="main-payment__column main-payment__ipoteka">
             <div class="main-payment__info">
-              <span class="main-payment__title">Ипотека<br> от 0,3%</span>
+              <span class="main-payment__title">Ипотека от<br>любых банков</span>
               <img src="images/general/payment1.png" class="main-payment__image main-payment__first">
             </div>
           </div>
 
           <div class="main-payment__column main-payment__trade-in">
             <div class="main-payment__info">
-              <span class="main-payment__title">Trade-in</span>
+              <span class="main-payment__title">Сделка с<br>использованием<br>эскроу счета</span>
               <img src="images/general/payment2.png" class="main-payment__image main-payment__second">
             </div>
           </div>
 
           <div class="main-payment__column main-payment__combination-flat">
             <div class="main-payment__info">
-              <span class="main-payment__title">Совмещение<br> квартир</span>
+              <span class="main-payment__title">Совмещение<br>квартир</span>
               <img src="images/general/payment3.png" class="main-payment__image main-payment__third">
             </div>
           </div>
@@ -100,21 +101,21 @@
         <div class="main-payment__row-slider">
           <div class="main-payment__column main-payment__ipoteka">
             <div class="main-payment__info">
-              <span class="main-payment__title">Ипотека<br> от 0,3%</span>
+              <span class="main-payment__title">Ипотека от<br>любых банков</span>
               <img src="images/general/payment1.png" class="main-payment__image main-payment__first">
             </div>
           </div>
 
           <div class="main-payment__column main-payment__trade-in">
             <div class="main-payment__info">
-              <span class="main-payment__title">Trade-in</span>
+              <span class="main-payment__title">Сделка с<br>использованием<br>эскроу счета</span>
               <img src="images/general/payment2.png" class="main-payment__image main-payment__second">
             </div>
           </div>
 
           <div class="main-payment__column main-payment__combination-flat">
             <div class="main-payment__info">
-              <span class="main-payment__title">Совмещение<br> квартир</span>
+              <span class="main-payment__title">Совмещение<br>квартир</span>
               <img src="images/general/payment3.png" class="main-payment__image main-payment__third">
             </div>
           </div>
@@ -132,31 +133,31 @@
       <section class="purchase-content__body">
         <div class="purchase-ipoteka">
           <h4 class="purchase-ipoteka__title title">Удобная ипотека</h4>
-          <div class="purchase-ipoteka__subtitle subtitle">Посмотрите на преимущества нашей ипоетки<br>для Вас и вашего бюджета</div>
+          <div class="purchase-ipoteka__subtitle subtitle">Посмотрите на преимущества нашей ипотеки<br>для Вас и вашего бюджета</div>
 
-          <div class="purchase-ipoteka__items-block space-btwn">
+          <div class="purchase-ipoteka__items-block">
             <div class="purchase-ipoteka__item">
               <h5 class="purchase-ipoteka__number">01</h5>
-              <div class="purchase-ipoteka__item-title">Ипотека<br>от банков-партнеров</div>
-              <div class="purchase-ipoteka__item-subtitle">Мы сотрудничаем только<br>с проверенными банками</div>
+              <div class="purchase-ipoteka__item-title">Ипотека от банков-партнеров</div>
+              <div class="purchase-ipoteka__item-subtitle">Мы сотрудничаем только с проверенными банками</div>
             </div>
 
             <div class="purchase-ipoteka__item">
               <h5 class="purchase-ipoteka__number">02</h5>
-              <div class="purchase-ipoteka__item-title">Ипотека<br>от банков-партнеров</div>
-              <div class="purchase-ipoteka__item-subtitle">Мы сотрудничаем только<br>с проверенными банками</div>
+              <div class="purchase-ipoteka__item-title">Первоначальный взнос от 10%</div>
+              <div class="purchase-ipoteka__item-subtitle">Нет большой суммы для первоначального взноса? Мы поможем</div>
             </div>
 
             <div class="purchase-ipoteka__item">
               <h5 class="purchase-ipoteka__number">03</h5>
-              <div class="purchase-ipoteka__item-title">Ипотека<br>от банков-партнеров</div>
-              <div class="purchase-ipoteka__item-subtitle">Мы сотрудничаем только<br>с проверенными банками</div>
+              <div class="purchase-ipoteka__item-title">Онлайн калькулятор</div>
+              <div class="purchase-ipoteka__item-subtitle">Рассчитайте свою ипотеку<br>в несколько кликов</div>
             </div>
 
             <div class="purchase-ipoteka__item">
               <h5 class="purchase-ipoteka__number">04</h5>
-              <div class="purchase-ipoteka__item-title">Ипотека<br>от банков-партнеров</div>
-              <div class="purchase-ipoteka__item-subtitle">Мы сотрудничаем только<br>с проверенными банками</div>
+              <div class="purchase-ipoteka__item-title">Содействиев получении одобрения</div>
+              <div class="purchase-ipoteka__item-subtitle">Иы на вашей стороне</div>
             </div>
           </div>
 
@@ -168,76 +169,6 @@
             <img src="images/purchase/right-pc-image.png" alt="" class="purchase-registration__img purchase-registration__img_right">
           </div>
         </div>
-
-        <div class="purchase-calc">
-
-          <h4 class="title">Ипотечный калькулятор</h4>
-          <div class="purchase-calc__muted muted space-btwn">
-            <span>Параметры кредитования</span>
-            <span>Предложения от банка партнера</span>
-          </div>
-
-          <div class="purchase-calc__body">
-            <div class="purchase-calc__btns-block">
-              <button class="purchase-calc__btn unselect-btn">Жилой комплекс</button>
-              <button class="purchase-calc__btn unselect-btn">Количество комнат</button>
-              <button class="purchase-calc__btn unselect-btn">Цена 4 300 000Р</button>
-              <button class="purchase-calc__btn purchase-calc__btn_first-payment unselect-btn"> <small class="purchase-calc__btn_small">Первый взнос</small> 1 300 000Р <small class="purchase-calc__btn_small">20%</small></button>
-            </div>
-
-            <div class="purchase-calc__table-block">
-              <table class="purchase-table">
-                <thead class="purchase-table__header">
-                  <tr class="purchase-table__header-row">
-                    <th scope="col" class="purchase-table__column purchase-table__column-bank">Банк</th>
-                    <th scope="col" class="purchase-table__column purchase-table__column-precent">%Ставка</th>
-                    <th scope="col" class="purchase-table__column purchase-table__column-term">Срок кредита</th>
-                    <th scope="col" class="purchase-table__column purchase-table__column-first-payment">Первый взнос</th>
-                    <th scope="col" class="purchase-table__column purchase-table__column-monthly-payment">Платеж в месяц</th>
-                  </tr>
-                </thead>
-                <tbody class="purchase-table__body">
-                  <tr class="purchase-table__body-row">
-                    <td class="purchase-table__column">ВТБ</td>
-                    <td class="purchase-table__column">0.1%–6.1%</td>
-                    <td class="purchase-table__column">до 30 лет</td>
-                    <td class="purchase-table__column">от 10%</td>
-                    <td class="purchase-table__column">20 000 ₽</td>
-                  </tr>
-                  <tr class="purchase-table__body-row">
-                    <td class="purchase-table__column">ВТБ</td>
-                    <td class="purchase-table__column">0.1%–6.1%</td>
-                    <td class="purchase-table__column">до 30 лет</td>
-                    <td class="purchase-table__column">от 10%</td>
-                    <td class="purchase-table__column">20 000 ₽</td>
-                  </tr>
-                  <tr class="purchase-table__body-row">
-                    <td class="purchase-table__column">ВТБ</td>
-                    <td class="purchase-table__column">0.1%–6.1%</td>
-                    <td class="purchase-table__column">до 30 лет</td>
-                    <td class="purchase-table__column">от 10%</td>
-                    <td class="purchase-table__column">20 000 ₽</td>
-                  </tr>
-                  <tr class="purchase-table__body-row">
-                    <td class="purchase-table__column">ВТБ</td>
-                    <td class="purchase-table__column">0.1%–6.1%</td>
-                    <td class="purchase-table__column">до 30 лет</td>
-                    <td class="purchase-table__column">от 10%</td>
-                    <td class="purchase-table__column">20 000 ₽</td>
-                  </tr>
-                  <tr class="purchase-table__body-row">
-                    <td class="purchase-table__column">ВТБ</td>
-                    <td class="purchase-table__column">0.1%–6.1%</td>
-                    <td class="purchase-table__column">до 30 лет</td>
-                    <td class="purchase-table__column">от 10%</td>
-                    <td class="purchase-table__column">20 000 ₽</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div class="purchase-trade-in">
         <h4 class="trade-in__title title">Trade-in</h4>
@@ -288,7 +219,7 @@
         </span>
 
         <div class="trade-in__select">
-          <span class="trade-in__select-title">Выберите квартиру для Trade-In</span>
+          <span class="trade-in__select-title title">Выберите квартиру для Trade-In</span>
           <button class="trade-in__select-button select-btn">Перейти к выбору квартиры</button>
         </div>
       </div>
@@ -356,6 +287,30 @@
 
     </section>
 
+    <div id="ex1" class="modal">
+      <div class="callback">
+    
+        <h4 class="title">Оставьте заявку<br>и мы свяжемся с вами</h4>
+        <div class="callback-inputs">
+    
+          <div class="callback-inputs__row space-btwn">
+            <input type="text" class="callback-inputs__item" placeholder="Меня зовут">
+            <input type="text" class="callback-inputs__item" placeholder="E-mail">
+          </div>
+    
+          <div class="callback-inputs__row space-btwn">
+            <input type="text" class="callback-inputs__item" placeholder="Телефон">
+            <input type="text" class="callback-inputs__item" placeholder="Когда можно позвониить мне">
+          </div>
+    
+        </div>
+    
+        <a href="#" class="select-btn">Проконсультироваться</a>
+        <p class="callback-muted muted">Ответим на любой вопрос<br>по Trade-in и поможем совершить сделку</p>
+    
+      </div>
+    </div>
+
     <!-- Content -->
 
     <!-- Footer -->
@@ -372,6 +327,7 @@
 
     <!-- Scripts -->
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script script src="js/script.js"></script>
 </body>
 </html>
