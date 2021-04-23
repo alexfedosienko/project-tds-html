@@ -2736,16 +2736,9 @@ td, th{
   width: 100%;
   height: 460px;
 }
-.requisites__info_left {
-  max-width: 380px;
-}
-.requisites__info_right {
-  max-width: 500px ;
-}
-.requsites__director {
-  display: block;
-  text-align: center;
-  margin-top: 30px;
+.requisites {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 767px) {
