@@ -1712,6 +1712,9 @@ input:checked + .switch-slider:before {
   .flact-action__title{
     content: '123';
   }
+  .flat-action__btn {
+    margin-top: 20px !important;
+  }
   .main-action__left-house{
     display: none;
   }
