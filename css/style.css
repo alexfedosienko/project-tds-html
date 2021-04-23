@@ -2575,10 +2575,12 @@ td, th{
 .company__info{
   margin: 80px auto 0 auto;
   max-width: 675px;
+  flex-wrap: wrap;
 }
 .company__info-item{
   display: flex;
   flex-direction: column;
+
 }
 .company__number {
   font-size: 120px;
@@ -2684,6 +2686,25 @@ td, th{
 .requisites {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 767px) {
+  .company__info-item {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .diplomes__image_1 {
+    width: 90%;
+  }
+  .about-images__block {
+    grid-template-columns: 1fr;
+  }
+  .docs__accordion-body {
+    padding: 10px;
+  }
+  .docs__docs-title {
+    margin: 0;
+  }
 }
 /* ----------------------------- about! ----------------------------- */
 
