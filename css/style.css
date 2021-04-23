@@ -2266,6 +2266,7 @@ td, th{
   flex-wrap: wrap;
 }
 .projects__item {
+  width: 205px;
   cursor: pointer;
   text-decoration: none;
   color: var(--golden);
@@ -2281,8 +2282,7 @@ td, th{
 }
 
 .projects-block__our {
-  width: 80%  !important;
-  margin: 0 auto 100px auto;
+  margin-bottom: 120px;
 }
 
 .projects__item .projects-our__img{
@@ -2292,7 +2292,8 @@ td, th{
   object-position: center;
 }
 .projects__item{
-  margin-bottom: 20px;
+  margin-bottom: 80px;
+  height: 190px;
 }
 .projects__item:nth-child(7n-1),
 .projects__item:nth-child(7n){
