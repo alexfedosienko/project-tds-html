@@ -103,7 +103,6 @@ main{
   display: flex;
   justify-content: space-between;
 }
-
 ul{
   list-style-type: none;
 }
@@ -137,7 +136,6 @@ ul{
 .callback-inputs__item{
   width: 240px;
 }
-
 /* ----------- docs-link ----------- */
 
 .docs-link {
@@ -1929,7 +1927,7 @@ input:checked + .switch-slider:before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    
   }
   .favorite-item__payment-button {
     width: 200px;
@@ -2751,7 +2749,7 @@ td, th{
 .purchase-combination__row{
   display: grid;
   grid-template-columns: minmax(558px, 1fr) 1fr;
-  gap: 150px;
+  gap: 75px;
 }
 
 .purchase-combination__img-block img{
@@ -2801,7 +2799,6 @@ td, th{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 920px;
 }
 .purchase-ipoteka__item {
   border: 1px solid var(--golden);
@@ -2925,7 +2922,7 @@ td, th{
 }
 
 .trade-in__subtitle{
-  width: 36%;
+  max-width: 400px;
   display: flex;
   text-align: center;
   margin: 0 auto;
@@ -2973,7 +2970,7 @@ td, th{
 
 .trade-in__footer{
   display: flex;
-  width: 50%;
+  max-width: 555px;
   margin: 80px auto 150px auto;
   text-align: center;
 }
@@ -2989,7 +2986,6 @@ td, th{
 .trade-in__select-title{
   margin-top: 25px;
   margin-bottom: 40px;
-  font-size: 36px;
 }
 .trade-in__select-button{
   display: flex;
