@@ -170,8 +170,8 @@ ul{
 }
 .header__logo-image{
   position: relative;
-  top: -17px;
-  height: 80px;
+  top: 5px;
+  height: 50px;
 }
 .header__links{
   margin: 0;
@@ -1212,19 +1212,18 @@ input:checked + .switch-slider:before {
   background-size: contain;
   z-index: -1;
 }
-
-.main-houses__info-secondary{
-  color: #99A1AA;
-  font-size: 10px;
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
+.main-houses__info{
+  font-size: 16px;
+  display: grid;
+  justify-content: center;
 }
-.main-houses__info-main{
-  color: var(--golden);
-  font-size: 14px;
+.main-houses__info small{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.info-house__address{
+  font-size: 12px;
+  color: var(--muted);
 }
 
 .house-background__pen{
@@ -1403,17 +1402,10 @@ input:checked + .switch-slider:before {
     width: 90%;
   }
   .main-houses__img{
-    width: 100%;
-    height: 150px;
+    height: 150px !important;
   }
-  .main-houses__info-secondary{
-    margin-top: 20px;
-  }
-  .info-secondary{
-    font-size: 12px;
-  }
-  .main-houses__info-main{
-    font-size: 16px;
+  .projects__item{
+    margin-bottom: 40px;
   }
 
   .main-payments{
@@ -1927,7 +1919,7 @@ input:checked + .switch-slider:before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
   }
   .favorite-item__payment-button {
     width: 200px;
@@ -2292,6 +2284,19 @@ td, th{
   .select-flats__breadcrumbs {
     display: none;
   }
+  .select-flats__floor{
+    display: none;
+  }
+
+  .flats-body__row{
+    vertical-align: middle;
+  }
+  .flats-column__field-for-mobile {
+    display: table-cell;
+  }
+  .flats-column__full-price{
+    font-size: 16px;
+  }
 }
 @media (max-width: 767px){
   .flats-column__rooms,
@@ -2355,6 +2360,11 @@ td, th{
 .projects__item:hover {
   color: var(--golden);
 }
+.projects__item:nth-child(7n-1),
+.projects__item:nth-child(7n)
+{
+  width: 49%;
+}
 
 
 .projects-block__our .projects__item .main-houses__img,
@@ -2363,7 +2373,6 @@ td, th{
 }
 
 .projects-block__our {
-  width: 80%  !important;
   margin: 0 auto 100px auto;
 }
 
@@ -2717,6 +2726,33 @@ td, th{
   justify-content: center;
 }
 @media (max-width: 767px) {
+  .about__title {
+    margin-top: 60px;
+  }
+  .about-tabs{
+    display: grid;
+    margin: 40px auto;
+  }
+  .about-tabs .slick-dots{
+    width: 90vw;
+    top: 10px;
+  }
+  .about-tabs .slick-track{
+    width: 900px !important;
+  }
+
+  .about-images__block{
+    margin: 60px 0;
+  }
+
+  .company__info {
+    margin: 40px auto 0 auto;
+  }
+
+  .about-content{
+    margin: 60px 0 0 0;
+  }
+
   .company__info-item {
     display: block;
     width: 100%;
