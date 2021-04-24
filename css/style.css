@@ -103,9 +103,38 @@ main{
   display: flex;
   justify-content: space-between;
 }
-
 ul{
   list-style-type: none;
+}
+.modal{
+  max-width: 700px;
+  height: 700px;
+  padding: 0px;
+  border-radius: 0px;
+  background-color: rgba(0,0,0, 0);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+}
+.close-modal {
+  top: 0px !important;
+  right: 0px !important;
+  background-image: url('./icons/Exclude.svg') !important;
+}
+
+.callback{
+  position: relative;
+  top: 40px;
+  height: 600px;
+}
+.callback-inputs{
+  width: 600px;
+  margin-bottom: 90px;
+}
+.callback-inputs__item{
+  width: 240px;
 }
 /* ----------- docs-link ----------- */
 
@@ -160,16 +189,6 @@ ul{
 .header__item a{
   color: var(--golden);
   text-decoration: none;
-}
-
-@media (max-width: 767px) {
-  .header__logo-image {
-    top: 5px;
-    height: 50px;
-  }
-  .header__burger {
-    top: 23px;
-  }
 }
 /* ----------- header! ----------- */
 
@@ -481,11 +500,6 @@ input:checked + .switch-slider:before {
 .switch-slider.round:before {
   border-radius: 50%;
 }
-@media (max-width: 1023px) {
-  #filter{
-    max-height: none;
-  }
-}
 /* ----------- filter! ----------- */
 
 /* ----------- breadcrumbs ----------- */
@@ -687,47 +701,7 @@ input:checked + .switch-slider:before {
     display: none;
   }
 }
-@media (max-width: 767px) {
-  .flats-header__row,
-  .select-flats__floor,
-  .select-flats__floor-img{
-    display: none !important;
-  }
 
-  .flats-column__field-for-mobile{
-    display: flex !important;
-    margin: auto;
-    justify-content: center;
-    font-size: 12px;
-  }
-
-  .flats-body__row{
-    display: flex;
-    vertical-align: center;
-  }
-  .flats-column__full-price{
-    padding-top: 32px !important;
-    font-size: 16px;
-  }
-}
-@media (min-width: 580px) and (max-width: 767px) {
-  .flats-column__full-price {
-    padding-top: 21px !important;
-    font-size: 27px;
-  }
-  .flats-column__field-for-mobile {
-    font-size: 17px;
-  }
-}
-@media (min-width: 492px) and (max-width: 580px){
-  .flats-column__full-price {
-    padding-top: 28px !important;
-    font-size: 20px;
-  }
-  .flats-column__field-for-mobile {
-    font-size: 15px;
-  }
-}
 /*                media                   */
 @media (max-width: 1023px){
   .filter-list{
@@ -1019,7 +993,7 @@ input:checked + .switch-slider:before {
 .house-info__subtitle {
   font-size: 12px;
   margin-right: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 .house-info__item {
   margin: 10px 0;
@@ -1168,7 +1142,7 @@ input:checked + .switch-slider:before {
 .completed__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 200px;
 }
 
@@ -1221,7 +1195,7 @@ input:checked + .switch-slider:before {
     height: 190px;
 }
 .main-houses__img {
-    width: 100%;
+    width: 300px;
     height: 190px;
     filter: brightness(0.85);
 }
@@ -1237,6 +1211,20 @@ input:checked + .switch-slider:before {
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1;
+}
+
+.main-houses__info-secondary{
+  color: #99A1AA;
+  font-size: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-houses__info-main{
+  color: var(--golden);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .house-background__pen{
@@ -1418,6 +1406,15 @@ input:checked + .switch-slider:before {
     width: 100%;
     height: 150px;
   }
+  .main-houses__info-secondary{
+    margin-top: 20px;
+  }
+  .info-secondary{
+    font-size: 12px;
+  }
+  .main-houses__info-main{
+    font-size: 16px;
+  }
 
   .main-payments{
     margin-top: 0px;
@@ -1470,6 +1467,8 @@ input:checked + .switch-slider:before {
 @media (min-width: 768px) and (max-width: 1023px){
   .main-houses{
     flex-wrap: wrap;
+    width: 90vw;
+    margin-left: 5vw;
     justify-content: space-evenly;
   }
   .main-houses__house{
@@ -1493,43 +1492,11 @@ input:checked + .switch-slider:before {
   .main-news__row{
     flex-wrap: wrap;
     width: 90vw;
-    width: 100%;
     margin-left: 5vw;
     justify-content: space-evenly;
   }
   .main-news__item{
     margin-bottom: 20px;
-  }
-
-  .main-payment__row{
-    width: 100%;
-  }
-  .header__burger {
-    top: 24px;
-  }
-  .header__logo_mobile {
-    top: 14px;
-  }
-
-  .filter__btn-commer{
-    padding: 10px 0px !important;
-    overflow: hidden;
-  }
-  .filter__btn{
-    text-align: center;
-  }
-  .irs{
-    height: 0px;
-  }
-
-  .main-action button{
-    z-index: 10;
-    position: relative;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1100px){
-  .main-payment__row{
-    width: 70%;
   }
 }
 @media (max-width: 1023px){
@@ -1544,16 +1511,6 @@ input:checked + .switch-slider:before {
   }
   .main-houses__img_block::after{
     display: none !important;
-  }
-
-  .main-houses__info-secondary{
-    color: var(--muted);
-    display: flex;
-    justify-content: space-between;
-  }
-  .main-houses__info-main{
-    display: flex;
-    justify-content: space-between;
   }
 }
 /* ----------------------------- main! ----------------------------- */
@@ -1784,6 +1741,9 @@ input:checked + .switch-slider:before {
   .flact-action__title{
     content: '123';
   }
+  .flat-action__btn {
+    margin-top: 20px !important;
+  }
   .main-action__left-house{
     display: none;
   }
@@ -1801,8 +1761,11 @@ input:checked + .switch-slider:before {
     width: 100%;
   }
 
-  .flat-similar__block{
-    display: block;
+  .flat-similar__block_mobile{
+    display: grid !important;
+  }
+  .flat-similar__block_mobile .slick-dots {
+    width: 100vw;
   }
   .flat-similar__item{
     margin-right: 40px;
@@ -1964,7 +1927,7 @@ input:checked + .switch-slider:before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    
   }
   .favorite-item__payment-button {
     width: 200px;
@@ -2161,10 +2124,6 @@ input:checked + .switch-slider:before {
 .contacts-body__img-block{
   border: 3px solid var(--golden);
 }
-.contacts-body__img-block iframe {
-  width: 90%;
-}
-
 .contacts-body{
   display:flex;
   flex-wrap: wrap;
@@ -2389,7 +2348,6 @@ td, th{
   flex-wrap: wrap;
 }
 .projects__item {
-  width: 205px;
   cursor: pointer;
   text-decoration: none;
   color: var(--golden);
@@ -2405,7 +2363,8 @@ td, th{
 }
 
 .projects-block__our {
-  margin-bottom: 120px;
+  width: 80%  !important;
+  margin: 0 auto 100px auto;
 }
 
 .projects__item .projects-our__img{
@@ -2415,20 +2374,10 @@ td, th{
   object-position: center;
 }
 .projects__item{
-  margin-bottom: 80px;
-  height: 190px;
+  margin-bottom: 20px;
 }
-.projects__item:nth-child(7n-1),
-.projects__item:nth-child(7n){
+.projects__item-big{
   width: 49%;
-}
-
-.main-houses__info{
-  display: grid;
-  text-align: center;
-}
-.info-house__address{
-  color: var(--muted);
 }
 
 .projects-btn {
@@ -2655,10 +2604,12 @@ td, th{
 .company__info{
   margin: 80px auto 0 auto;
   max-width: 675px;
+  flex-wrap: wrap;
 }
 .company__info-item{
   display: flex;
   flex-direction: column;
+
 }
 .company__number {
   font-size: 120px;
@@ -2687,26 +2638,13 @@ td, th{
   border: 1px solid var(--golden);
   text-align: left;
   outline: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
 }
 .docs__accordion-body {
   text-align: left;
   background-color: var(--dark);
   color: var(--golden);
+  padding: 30px 65px 25px 65px;
   border: 1px solid rgba(255, 233, 189, 0.5);
-  padding: 0;
-  overflow: hidden;
-}
-.docs__accordion-content{
-  height: 0px;
-  transition: 1s;
-
-  position: relative;
-  top: 30px;
-  left: 65px;
 }
 .docs__docs-title {
   display: block;
@@ -2778,13 +2716,23 @@ td, th{
   display: flex;
   justify-content: center;
 }
-
 @media (max-width: 767px) {
-  .about-tabs{
-    display: inline-block;
+  .company__info-item {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
-  .slick-track{
-    display: flex;
+  .diplomes__image_1 {
+    width: 90%;
+  }
+  .about-images__block {
+    grid-template-columns: 1fr;
+  }
+  .docs__accordion-body {
+    padding: 10px;
+  }
+  .docs__docs-title {
+    margin: 0;
   }
 }
 /* ----------------------------- about! ----------------------------- */
@@ -2801,7 +2749,7 @@ td, th{
 .purchase-combination__row{
   display: grid;
   grid-template-columns: minmax(558px, 1fr) 1fr;
-  gap: 150px;
+  gap: 75px;
 }
 
 .purchase-combination__img-block img{
@@ -2847,7 +2795,10 @@ td, th{
 }
 .purchase-ipoteka__items-block {
   margin: 60px auto 160px auto;
-  width: 920px;
+  max-width: 920px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .purchase-ipoteka__item {
   border: 1px solid var(--golden);
@@ -2971,7 +2922,7 @@ td, th{
 }
 
 .trade-in__subtitle{
-  width: 36%;
+  max-width: 400px;
   display: flex;
   text-align: center;
   margin: 0 auto;
@@ -3007,17 +2958,19 @@ td, th{
 .trade-in__steps_up{
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-top: 90px;
 }
 .trade-in__steps_down{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top:80px;
 }
 
 .trade-in__footer{
   display: flex;
-  width: 50%;
+  max-width: 555px;
   margin: 80px auto 150px auto;
   text-align: center;
 }
@@ -3033,7 +2986,6 @@ td, th{
 .trade-in__select-title{
   margin-top: 25px;
   margin-bottom: 40px;
-  font-size: 36px;
 }
 .trade-in__select-button{
   display: flex;
@@ -3074,8 +3026,37 @@ td, th{
 
 @media (max-width: 992px) {
   .purchase-payment__row{
-  width: 80% !important;
+    width: 80% !important;
+  }
+  .purchase-ipoteka__items-block {
+    justify-content: space-around;
+  }
+  .purchase-ipoteka__item {
+    margin-bottom: 50px;
+  }
+  .purchase-registration__img {
+    display: none;
+  }
+  .purchase-combination__row {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+  }
+  .purchase-combination__img-block img{
+    width: 80%;
+    height: 205px;
+  }
 }
+@media (max-width: 550px) {
+  .trade-in__steps,
+  .trade-in__steps_up,
+  .trade-in__steps_down {
+    display: block;
+    margin: 0 auto;
+  }
+  .trade-in__step{
+    margin: 30px auto;
+  }
 }
 
 /* ----------------------------- purchase! ----------------------------- */
