@@ -1470,8 +1470,6 @@ input:checked + .switch-slider:before {
 @media (min-width: 768px) and (max-width: 1023px){
   .main-houses{
     flex-wrap: wrap;
-    width: 90vw;
-    margin-left: 5vw;
     justify-content: space-evenly;
   }
   .main-houses__house{
@@ -1495,11 +1493,43 @@ input:checked + .switch-slider:before {
   .main-news__row{
     flex-wrap: wrap;
     width: 90vw;
+    width: 100%;
     margin-left: 5vw;
     justify-content: space-evenly;
   }
   .main-news__item{
     margin-bottom: 20px;
+  }
+
+  .main-payment__row{
+    width: 100%;
+  }
+  .header__burger {
+    top: 24px;
+  }
+  .header__logo_mobile {
+    top: 14px;
+  }
+
+  .filter__btn-commer{
+    padding: 10px 0px !important;
+    overflow: hidden;
+  }
+  .filter__btn{
+    text-align: center;
+  }
+  .irs{
+    height: 0px;
+  }
+
+  .main-action button{
+    z-index: 10;
+    position: relative;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1100px){
+  .main-payment__row{
+    width: 70%;
   }
 }
 @media (max-width: 1023px){
@@ -1514,6 +1544,16 @@ input:checked + .switch-slider:before {
   }
   .main-houses__img_block::after{
     display: none !important;
+  }
+
+  .main-houses__info-secondary{
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-houses__info-main{
+    display: flex;
+    justify-content: space-between;
   }
 }
 /* ----------------------------- main! ----------------------------- */
@@ -1761,11 +1801,8 @@ input:checked + .switch-slider:before {
     width: 100%;
   }
 
-  .flat-similar__block_mobile{
-    display: grid !important;
-  }
-  .flat-similar__block_mobile .slick-dots {
-    width: 100vw;
+  .flat-similar__block{
+    display: block;
   }
   .flat-similar__item{
     margin-right: 40px;
@@ -2352,6 +2389,7 @@ td, th{
   flex-wrap: wrap;
 }
 .projects__item {
+  width: 205px;
   cursor: pointer;
   text-decoration: none;
   color: var(--golden);
@@ -2367,8 +2405,7 @@ td, th{
 }
 
 .projects-block__our {
-  width: 80%  !important;
-  margin: 0 auto 100px auto;
+  margin-bottom: 120px;
 }
 
 .projects__item .projects-our__img{
@@ -2378,7 +2415,8 @@ td, th{
   object-position: center;
 }
 .projects__item{
-  margin-bottom: 20px;
+  margin-bottom: 80px;
+  height: 190px;
 }
 .projects__item:nth-child(7n-1),
 .projects__item:nth-child(7n){
